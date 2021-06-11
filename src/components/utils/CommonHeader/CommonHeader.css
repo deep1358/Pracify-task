@@ -1,0 +1,19 @@
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 30%;
+  width: 50%;
+  text-align: center;
+}
+.c-header > h3 {
+  font-size: 36px;
+  color: #374b5c;
+  line-height: 1.33;
+}
+.c-header > p {
+  font-size: 16px;
+  color: #374b5c;
+  line-height: 1.31;
+}

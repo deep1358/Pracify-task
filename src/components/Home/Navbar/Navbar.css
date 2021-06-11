@@ -1,0 +1,78 @@
+nav {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+}
+
+.nav-logo > h1 {
+  font-family: LibreBaskerville;
+  font-size: 42px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #374b5c;
+  padding-left: 0.5rem;
+}
+
+.nav-list {
+  flex: 0.6;
+  display: block;
+  margin: auto;
+}
+.nav-list > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.nav-list > ul li:not(:last-child) {
+  padding: 0 2rem;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #374b5c;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.nav-list > ul li:not(:last-child):after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #00dbd0;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-list > ul li:not(:last-child):hover:after {
+  transform: scaleX(1);
+}
+.nav-list > ul li:last-child {
+  padding: 12px 48px 13px 38px;
+  border-radius: 10px;
+  border: solid 2px #00dbd0;
+  cursor: pointer;
+}
+.active {
+  display: block;
+  border-bottom: solid 3px #00dbd0;
+}
+@media (max-width: 1250px) {
+  .nav-list > ul li:not(:last-child) {
+    padding: 0 1rem;
+  }
+}
